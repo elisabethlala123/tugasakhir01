@@ -3,16 +3,10 @@ import pickle
 import streamlit as st
 import git
 
-# Clone the GitHub repository
-repo_url = 'https://github.com/elisabethlala123/tugasakhir01.git'
-local_repo_path = 'trained_model.pkl'
-git.Repo.clone_from(repo_url, local_repo_path)
 
-# Define the path to your pickled file
-file_path = '/path/to/local/repo/data/trained_model.pkl'
 
 # loading the saved model
-loaded_model = pickle.load(open(file_path, 'rb'))
+loaded_model = pickle.load(open('trained_model.pkl', 'rb'))
 
 
 # creating a function for Prediction

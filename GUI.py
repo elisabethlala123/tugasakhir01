@@ -4,7 +4,7 @@ import streamlit as st
 
 
 # loading the saved model
-loaded_model = pickle.load(open('D:/Work/Machine Learning/Deploying Machine Learning model/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('https://drive.google.com/drive/folders/1Uw9ZJb2xW-SO9_AohI5k3iMd0w1mPAG0?usp=sharing', 'rb'))
 
 
 # creating a function for Prediction

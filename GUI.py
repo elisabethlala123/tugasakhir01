@@ -1,8 +1,6 @@
 import numpy as np
 import pickle
 import streamlit as st
-import git
-
 
 
 file_path = '/path/to/trained_model.sav'  # Adjust this to the actual path of your model file

@@ -1,7 +1,15 @@
 import numpy as np
 import pickle
 import streamlit as st
+import git
 
+# Clone the GitHub repository
+repo_url = 'https://github.com/elisabethlala123/tugasakhir01.git'
+local_repo_path = '/path/to/local/repo'
+git.Repo.clone_from(repo_url, local_repo_path)
+
+# Define the path to your pickled file
+file_path = '/path/to/local/repo/data/your_file.pkl'
 
 # loading the saved model
 loaded_model = pickle.load(open('https://drive.google.com/drive/folders/1Uw9ZJb2xW-SO9_AohI5k3iMd0w1mPAG0?usp=sharing', 'rb'))

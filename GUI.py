@@ -9,10 +9,10 @@ local_repo_path = '/path/to/local/repo'
 git.Repo.clone_from(repo_url, local_repo_path)
 
 # Define the path to your pickled file
-file_path = '/path/to/local/repo/data/your_file.pkl'
+file_path = '/path/to/local/repo/data/trained_model.pkl'
 
 # loading the saved model
-loaded_model = pickle.load(open('https://drive.google.com/drive/folders/1Uw9ZJb2xW-SO9_AohI5k3iMd0w1mPAG0?usp=sharing', 'rb'))
+loaded_model = pickle.load(open(file_path, 'rb'))
 
 
 # creating a function for Prediction

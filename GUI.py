@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 
-file_path = '/path/to/trained_model.sav'  # Adjust this to the actual path of your model file
+file_path = 'trained_model.sav'  # Adjust this to the actual path of your model file
 
 # loading the saved model
 try:

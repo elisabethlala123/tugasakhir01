@@ -1,11 +1,19 @@
 import numpy as np
 import pickle
 import streamlit as st
+import os
 
 
-# load the nlp model and tfidf vectorizer from disk
-filename = 'trained_model.pkl'
-loaded_model = pickle.load(open(filename, 'rb'))
+# Get the path to the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+filename = os.path.join(script_dir, 'trained_model.pkl')
+
+# Load the model
+try:
+    with open(filename, 'rb') as f:
+        loaded_model = pickle.load(f)
+except FileNotFoundError:
+    st.error("Model file not found. Please ensure the file path is correct.")
 
 # creating a function for Prediction
 

@@ -5,9 +5,14 @@ import git
 
 
 
-# loading the saved model
-loaded_model = pickle.load(open(`/path/to/trained_model.pkl`, 'rb'))
+file_path = '/path/to/trained_model.pkl'  # Adjust this to the actual path of your model file
 
+# loading the saved model
+try:
+    with open(file_path, 'rb') as f:
+        loaded_model = pickle.load(f)
+except FileNotFoundError:
+    st.error("Model file not found. Please ensure the file path is correct.")
 
 # creating a function for Prediction
 

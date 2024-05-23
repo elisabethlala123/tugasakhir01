@@ -1,2 +1,10 @@
-nummpy==1.25.2
-streamlit
+numpy==1.25.2
+pandas==2.0.3
+seaborn==0.13.1
+matplotlib==3.7.1
+plotly==5.15.0
+joblib==1.4.2
+streamlit==1.34.0
+python==3.10.12
+pickle
+scikit-learn

@@ -5,7 +5,7 @@ import git
 
 
 
-file_path = '/path/to/trained_model.pkl'  # Adjust this to the actual path of your model file
+file_path = '/path/to/trained_model.sav'  # Adjust this to the actual path of your model file
 
 # loading the saved model
 try:

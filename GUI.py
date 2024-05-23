@@ -5,7 +5,7 @@ import streamlit as st
 
 # load the nlp model and tfidf vectorizer from disk
 filename = 'trained_model.pkl'
-clf = pickle.load(open(filename, 'rb'))
+loaded_model = pickle.load(open(filename, 'rb'))
 
 # creating a function for Prediction
 

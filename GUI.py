@@ -2,24 +2,18 @@ import numpy as np
 import pickle
 import streamlit as st
 import git
-import os  # Import os module for directory operations
-
-# Define the local repository path
-local_repo_path = '/path/to/local/repo'  # Adjust this to the desired local directory
-
-# Ensure the directory exists, if not, create it
-if not os.path.exists(local_repo_path):
-    os.makedirs(local_repo_path)
 
 # Clone the GitHub repository
 repo_url = 'https://github.com/elisabethlala123/tugasakhir01.git'
+local_repo_path = 'trained_model.pkl'
 git.Repo.clone_from(repo_url, local_repo_path)
 
 # Define the path to your pickled file
-file_path = os.path.join(local_repo_path, 'data', 'trained_model.pkl')  # Adjust path based on your directory structure
+file_path = '/path/to/local/repo/data/trained_model.pkl'
 
 # loading the saved model
 loaded_model = pickle.load(open(file_path, 'rb'))
+
 
 # creating a function for Prediction
 

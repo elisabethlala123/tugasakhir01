@@ -6,7 +6,7 @@ import git
 
 
 # loading the saved model
-loaded_model = pickle.load(open('/path/to/trained_model.pkl', 'rb'))
+loaded_model = pickle.load(open(`/path/to/trained_model.pkl`, 'rb'))
 
 
 # creating a function for Prediction
